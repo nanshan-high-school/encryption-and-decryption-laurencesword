@@ -1,0 +1,36 @@
+#include <iostream>
+
+int main() {
+  int function, unit, i;
+  cout <<"若要加密請按1,解密請按2";
+  cin >> function ;
+  
+  if (function == 1) {
+    cout <<"請問要加密幾位";
+    cin >> unit;
+    cout <<"請輸入要加密的訊息";
+    char str [i];
+    cin >> str;
+    
+    for ( i = 0; i != \0; i ++){
+      str [i] = str [i] + unit;
+    }
+    cout << str << endl;
+  }
+  else if (function == 2){
+    cout <<"請問要解密幾位";
+    cin >> unit;
+    cout <<"請輸入要解密的訊息";
+    char str [i];
+    cin >> str;
+    
+    for ( i = 0; i != \0; i ++){
+      str [i] = str [i] - unit;
+    }
+    cout << str << endl;
+  }
+  else{
+    cout <<"沒這功能";
+  }
+    return 0;
+}
